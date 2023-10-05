@@ -44,12 +44,14 @@ class ParkingLot {
             return nil
         }
         parkingSpot.unparkVehicle()
+        let exitDate = Date()
         activeTickets = activeTickets.filter { $0.ticketNo != ticket.ticketNo }
+        let parkingFee = calculateParkingFee(forVehicle: ticket.vehicleType, entryDate: ticket.entryDate, exitDate: exitDate)
         let parkingReceipt = ParkingReceipt(receiptNo: getNextReceiptNo(),
                                             spotNo: ticket.spotNo,
                                             entryDate: ticket.entryDate,
-                                            exitDate: Date(),
-                                            fee: 0)
+                                            exitDate: exitDate,
+                                            fee: parkingFee)
         receipts.append(parkingReceipt)
         return parkingReceipt
     }
@@ -86,5 +88,42 @@ class ParkingLot {
 
     private func getNextReceiptNo() -> Int {
         return receipts.count + 1
+    }
+
+    func calculateParkingFee(forVehicle vehicle: Vehicle, entryDate: Date, exitDate: Date) -> Int {
+        let timeInterval = Int(exitDate.timeIntervalSince(entryDate))
+        let hours = ((timeInterval % 86400) / 3600)
+        switch vehicle {
+            case .twoWheeler:
+                if hours >= 12 {
+                    return hours * feeModel.twoWheelersFeeForMoreThan12Hours
+                } else if hours >= 4 {
+                    return hours * feeModel.twoWheelersFeeFor4To12Hours
+                } else if hours >= 1 {
+                    return hours * feeModel.twoWheelersFeeForFirst3Hours
+                } else {
+                    return feeModel.twoWheelersFeeForFirst3Hours
+                }
+            case .fourWheeler:
+                if hours >= 12 {
+                    return hours * feeModel.fourWheelersFeeForMoreThan12Hours
+                } else if hours >= 4 {
+                    return hours * feeModel.fourWheelersFeeFor4To12Hours
+                } else if hours >= 1 {
+                    return hours * feeModel.fourWheelersFeeForFirst3Hours
+                } else {
+                    return feeModel.fourWheelersFeeForFirst3Hours
+                }
+            case .heavy:
+                if hours >= 12 {
+                    return hours * feeModel.heavyVehicleFeeForMoreThan12Hours
+                } else if hours >= 4 {
+                    return hours * feeModel.heavyVehicleFeeFor4To12Hours
+                } else if hours >= 1 {
+                    return hours * feeModel.heavyVehicleFeeForFirst3Hours
+                } else {
+                    return feeModel.heavyVehicleFeeForFirst3Hours
+                }
+        }
     }
 }
