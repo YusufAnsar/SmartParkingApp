@@ -40,6 +40,8 @@
 		F525074D2ACEA2420008FFC3 /* ReceiptsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F525074B2ACEA2420008FFC3 /* ReceiptsListViewController.swift */; };
 		F525074E2ACEA2420008FFC3 /* ReceiptsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F525074C2ACEA2420008FFC3 /* ReceiptsListViewController.xib */; };
 		F52507502ACEA80D0008FFC3 /* ParkingFee.swift in Sources */ = {isa = PBXBuildFile; fileRef = F525074F2ACEA80D0008FFC3 /* ParkingFee.swift */; };
+		F52507532ACEC2320008FFC3 /* ParkingExitDateSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52507512ACEC2320008FFC3 /* ParkingExitDateSelectionViewController.swift */; };
+		F52507542ACEC2320008FFC3 /* ParkingExitDateSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F52507522ACEC2320008FFC3 /* ParkingExitDateSelectionViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +99,8 @@
 		F525074B2ACEA2420008FFC3 /* ReceiptsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptsListViewController.swift; sourceTree = "<group>"; };
 		F525074C2ACEA2420008FFC3 /* ReceiptsListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReceiptsListViewController.xib; sourceTree = "<group>"; };
 		F525074F2ACEA80D0008FFC3 /* ParkingFee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingFee.swift; sourceTree = "<group>"; };
+		F52507512ACEC2320008FFC3 /* ParkingExitDateSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingExitDateSelectionViewController.swift; sourceTree = "<group>"; };
+		F52507522ACEC2320008FFC3 /* ParkingExitDateSelectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ParkingExitDateSelectionViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +157,8 @@
 				F52506CA2ACDABE10008FFC3 /* SceneDelegate.swift */,
 				F525073B2ACE6C840008FFC3 /* ParkingEntryDateSelectionViewController.swift */,
 				F525073C2ACE6C840008FFC3 /* ParkingEntryDateSelectionViewController.xib */,
+				F52507512ACEC2320008FFC3 /* ParkingExitDateSelectionViewController.swift */,
+				F52507522ACEC2320008FFC3 /* ParkingExitDateSelectionViewController.xib */,
 				F525073F2ACE77400008FFC3 /* TicketDetailsViewController.swift */,
 				F52507402ACE77400008FFC3 /* TicketDetailsViewController.xib */,
 				F52507472ACE9D920008FFC3 /* ReceiptDetailsViewController.swift */,
@@ -308,6 +314,7 @@
 				F52506D82ACDABE20008FFC3 /* LaunchScreen.storyboard in Resources */,
 				F52506D52ACDABE20008FFC3 /* Assets.xcassets in Resources */,
 				F52507142ACE568F0008FFC3 /* SelectVehicleTypeViewController.xib in Resources */,
+				F52507542ACEC2320008FFC3 /* ParkingExitDateSelectionViewController.xib in Resources */,
 				F525073E2ACE6C840008FFC3 /* ParkingEntryDateSelectionViewController.xib in Resources */,
 				F52506D02ACDABE10008FFC3 /* Main.storyboard in Resources */,
 				F525070C2ACE46160008FFC3 /* ParkingLotViewController.xib in Resources */,
@@ -345,6 +352,7 @@
 				F52507042ACDC3920008FFC3 /* ParkingReceipt.swift in Sources */,
 				F525073D2ACE6C840008FFC3 /* ParkingEntryDateSelectionViewController.swift in Sources */,
 				F52507082ACE3F190008FFC3 /* UIViewController+Alert.swift in Sources */,
+				F52507532ACEC2320008FFC3 /* ParkingExitDateSelectionViewController.swift in Sources */,
 				F52507132ACE568F0008FFC3 /* SelectVehicleTypeViewController.swift in Sources */,
 				F52506D32ACDABE10008FFC3 /* MyParkingLotApp.xcdatamodeld in Sources */,
 				F52507492ACE9D920008FFC3 /* ReceiptDetailsViewController.swift in Sources */,

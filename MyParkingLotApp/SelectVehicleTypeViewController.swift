@@ -36,7 +36,7 @@ class SelectVehicleTypeViewController: UIViewController {
 
     private func validateVehicleTypeSelected(at index: Int) {
         let vehicle = Vehicle.allCases[index]
-        if let parkingSpot = parkingLot.getNextAvailableSpot(forType: vehicle) {
+        if parkingLot.isParkingAvailable(forType: vehicle) {
             let entryDateInputVC = ParkingEntryDateSelectionViewController(parkingLot: parkingLot,
                                                                            selectedVehicle: vehicle)
             navigationController?.pushViewController(entryDateInputVC, animated: true)

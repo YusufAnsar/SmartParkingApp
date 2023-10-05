@@ -39,12 +39,11 @@ class ParkingLot {
         return ticket
     }
 
-    func unparkTicket(ticket: Ticket) -> ParkingReceipt? {
+    func unparkTicket(ticket: Ticket, exitDate: Date) -> ParkingReceipt? {
         guard let parkingSpot = getParkingSpot(forSpotNo: ticket.spotNo, vehicleType: ticket.vehicleType) else {
             return nil
         }
         parkingSpot.unparkVehicle()
-        let exitDate = Date()
         activeTickets = activeTickets.filter { $0.ticketNo != ticket.ticketNo }
         let parkingFee = calculateParkingFee(forVehicle: ticket.vehicleType, entryDate: ticket.entryDate, exitDate: exitDate)
         let parkingReceipt = ParkingReceipt(receiptNo: getNextReceiptNo(),
@@ -56,11 +55,8 @@ class ParkingLot {
         return parkingReceipt
     }
 
-    func getParkingSpot(forSpotNo spotNo: Int, vehicleType: Vehicle) -> ParkingSpot? {
-        guard let parkingPots = parkingSpots[vehicleType] else {
-            return nil
-        }
-        return parkingPots.first { $0.spotNo == spotNo }
+    func isParkingAvailable(forType type: Vehicle) -> Bool {
+        return noOfParkingAvailable(forType: type) > 0
     }
 
     func noOfParkingAvailable(forType type: Vehicle) -> Int {
@@ -70,11 +66,14 @@ class ParkingLot {
         return parkingPots.filter { $0.isFree }.count
     }
 
-    func isParkingAvailable(forType type: Vehicle) -> Bool {
-        return noOfParkingAvailable(forType: type) > 0
+    private func getParkingSpot(forSpotNo spotNo: Int, vehicleType: Vehicle) -> ParkingSpot? {
+        guard let parkingPots = parkingSpots[vehicleType] else {
+            return nil
+        }
+        return parkingPots.first { $0.spotNo == spotNo }
     }
 
-    func getNextAvailableSpot(forType type: Vehicle) -> ParkingSpot? {
+    private func getNextAvailableSpot(forType type: Vehicle) -> ParkingSpot? {
         guard isParkingAvailable(forType: type),
               let parkingPots = parkingSpots[type] else {
             return nil
@@ -90,7 +89,7 @@ class ParkingLot {
         return receipts.count + 1
     }
 
-    func calculateParkingFee(forVehicle vehicle: Vehicle, entryDate: Date, exitDate: Date) -> Int {
+    private func calculateParkingFee(forVehicle vehicle: Vehicle, entryDate: Date, exitDate: Date) -> Int {
         let timeInterval = Int(exitDate.timeIntervalSince(entryDate))
         let hours = ((timeInterval % 86400) / 3600)
         switch vehicle {

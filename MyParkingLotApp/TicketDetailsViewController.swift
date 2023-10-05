@@ -46,13 +46,7 @@ class TicketDetailsViewController: UIViewController {
     }
 
     @IBAction func unparkButtonClicked(_ sender: Any) {
-        guard let receipt = parkingLot.unparkTicket(ticket: ticket) else {
-            return
-        }
-        let receiptDetailsVC = ReceiptDetailsViewController(parkingReceipt: receipt)
-        if let rootController = navigationController?.viewControllers.first {
-            let viewControllers = [rootController, receiptDetailsVC]
-            navigationController?.setViewControllers(viewControllers, animated: true)
-        }
+        let exitDateSelectionVC = ParkingExitDateSelectionViewController(parkingLot: parkingLot, ticket: ticket)
+        navigationController?.pushViewController(exitDateSelectionVC, animated: true)
     }
 }
