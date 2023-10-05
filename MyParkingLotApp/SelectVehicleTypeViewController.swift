@@ -38,8 +38,7 @@ class SelectVehicleTypeViewController: UIViewController {
         let vehicle = Vehicle.allCases[index]
         if let parkingSpot = parkingLot.getNextAvailableSpot(forType: vehicle) {
             let entryDateInputVC = ParkingEntryDateSelectionViewController(parkingLot: parkingLot,
-                                                                           selectedVehicle: vehicle,
-                                                                           parkingSpot: parkingSpot)
+                                                                           selectedVehicle: vehicle)
             navigationController?.pushViewController(entryDateInputVC, animated: true)
         } else {
             presentAlertWithTitleAndMessage(title: "",

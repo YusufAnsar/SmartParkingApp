@@ -12,7 +12,6 @@
             <connections>
                 <outlet property="entryDateLabel" destination="nvY-wm-itY" id="1fb-bz-4Xu"/>
                 <outlet property="entryDatePicker" destination="rs2-f4-Ja8" id="28a-4d-Luv"/>
-                <outlet property="spotNoLabel" destination="WX4-v6-UtO" id="DW3-kE-kHO"/>
                 <outlet property="vehicleTypeLabel" destination="M6T-fC-CtS" id="Tjm-nm-xSs"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -23,7 +22,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ZbF-VC-6QF">
-                    <rect key="frame" x="16" y="79" width="361" height="337"/>
+                    <rect key="frame" x="16" y="79" width="361" height="296.66666666666669"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selected Vehicle:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M6T-fC-CtS">
                             <rect key="frame" x="0.0" y="0.0" width="361" height="20.333333333333332"/>
@@ -31,20 +30,14 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selected Vehicle:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WX4-v6-UtO">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entry Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nvY-wm-itY">
                             <rect key="frame" x="0.0" y="40.333333333333329" width="361" height="20.333333333333329"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entry Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nvY-wm-itY">
-                            <rect key="frame" x="0.0" y="80.666666666666657" width="361" height="20.333333333333329"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="rs2-f4-Ja8">
-                            <rect key="frame" x="0.0" y="121" width="361" height="216"/>
+                            <rect key="frame" x="0.0" y="81" width="361" height="216"/>
                             <connections>
                                 <action selector="datePickerActionWithSender:" destination="-1" eventType="valueChanged" id="cgj-Ve-fkK"/>
                             </connections>
@@ -52,10 +45,10 @@
                     </subviews>
                 </stackView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kpO-eY-Ewa">
-                    <rect key="frame" x="0.0" y="416" width="393" height="402"/>
+                    <rect key="frame" x="0.0" y="375.66666666666674" width="393" height="442.33333333333326"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S6x-G7-bsp" customClass="CustomButton" customModule="MyParkingLotApp" customModuleProvider="target">
-                            <rect key="frame" x="40" y="177" width="313" height="48"/>
+                            <rect key="frame" x="40" y="197.33333333333331" width="313" height="48"/>
                             <color key="backgroundColor" systemColor="systemPinkColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="48" id="NwO-tg-nLV"/>

@@ -22,6 +22,20 @@ class ParkingLot {
         noOfParkingAvailable(forType: .fourWheeler) == 0 && noOfParkingAvailable(forType: .heavy) == 0
     }
 
+    func park(vehicle: Vehicle, entryDate: Date) -> Ticket? {
+        guard let parkingSpot = getNextAvailableSpot(forType: vehicle) else {
+            return nil
+        }
+        parkingSpot.parkVehicle()
+        let ticket = Ticket(ticketNo: getNextTicketNo(),
+                            spotNo: parkingSpot.spotNo,
+                            vehicleType: vehicle,
+                            entryDate: entryDate)
+        activeTickets.append(ticket)
+        allTickets.append(ticket)
+        return ticket
+    }
+
     func unparkTicket(ticket: Ticket) -> ParkingReceipt? {
         guard let parkingSpot = getParkingSpot(forSpotNo: ticket.spotNo, vehicleType: ticket.vehicleType) else {
             return nil
@@ -63,11 +77,11 @@ class ParkingLot {
         return parkingPots.first { $0.isFree }
     }
 
-    func getNextTicketNo() -> Int {
+    private func getNextTicketNo() -> Int {
         return allTickets.count + 1
     }
 
-    func getNextReceiptNo() -> Int {
+    private func getNextReceiptNo() -> Int {
         return receipts.count + 1
     }
 }
