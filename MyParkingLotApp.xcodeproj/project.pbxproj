@@ -41,6 +41,7 @@
 		F52507502ACEA80D0008FFC3 /* ParkingFee.swift in Sources */ = {isa = PBXBuildFile; fileRef = F525074F2ACEA80D0008FFC3 /* ParkingFee.swift */; };
 		F52507532ACEC2320008FFC3 /* ParkingExitDateSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52507512ACEC2320008FFC3 /* ParkingExitDateSelectionViewController.swift */; };
 		F52507542ACEC2320008FFC3 /* ParkingExitDateSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F52507522ACEC2320008FFC3 /* ParkingExitDateSelectionViewController.xib */; };
+		F525075B2ACEC9460008FFC3 /* ParkingLotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F525075A2ACEC9460008FFC3 /* ParkingLotTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,7 @@
 		F525074F2ACEA80D0008FFC3 /* ParkingFee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingFee.swift; sourceTree = "<group>"; };
 		F52507512ACEC2320008FFC3 /* ParkingExitDateSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingExitDateSelectionViewController.swift; sourceTree = "<group>"; };
 		F52507522ACEC2320008FFC3 /* ParkingExitDateSelectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ParkingExitDateSelectionViewController.xib; sourceTree = "<group>"; };
+		F525075A2ACEC9460008FFC3 /* ParkingLotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingLotTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				F52506E22ACDABE20008FFC3 /* MyParkingLotAppTests.swift */,
+				F525075A2ACEC9460008FFC3 /* ParkingLotTests.swift */,
 			);
 			path = MyParkingLotAppTests;
 			sourceTree = "<group>";
@@ -408,6 +411,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F525075B2ACEC9460008FFC3 /* ParkingLotTests.swift in Sources */,
 				F52506E32ACDABE20008FFC3 /* MyParkingLotAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
