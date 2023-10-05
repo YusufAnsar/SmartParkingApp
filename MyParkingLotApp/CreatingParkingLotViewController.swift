@@ -66,17 +66,23 @@ class CreatingParkingLotViewController: UIViewController {
         var twoWheelerParkingSpots: [ParkingSpot] = []
         var fourWheelerParkingSpots: [ParkingSpot] = []
         var heavyVehicleParkingSpots: [ParkingSpot] = []
-        for index in 1...noOfTwoWheelersSpot {
-            let spot = ParkingSpot(spotNo: index, vehicleType: .twoWheeler)
-            twoWheelerParkingSpots.append(spot)
+        if noOfTwoWheelersSpot > 0 {
+            for index in 1...noOfTwoWheelersSpot {
+                let spot = ParkingSpot(spotNo: index, vehicleType: .twoWheeler)
+                twoWheelerParkingSpots.append(spot)
+            }
         }
-        for index in 1...noOfFourWheelersSpot {
-            let spot = ParkingSpot(spotNo: index, vehicleType: .fourWheeler)
-            fourWheelerParkingSpots.append(spot)
+        if noOfFourWheelersSpot > 0 {
+            for index in 1...noOfFourWheelersSpot {
+                let spot = ParkingSpot(spotNo: index, vehicleType: .fourWheeler)
+                fourWheelerParkingSpots.append(spot)
+            }
         }
-        for index in 1...noOfHeavyVehicleSpot {
-            let spot = ParkingSpot(spotNo: index, vehicleType: .heavy)
-            heavyVehicleParkingSpots.append(spot)
+        if noOfHeavyVehicleSpot > 0 {
+            for index in 1...noOfHeavyVehicleSpot {
+                let spot = ParkingSpot(spotNo: index, vehicleType: .heavy)
+                heavyVehicleParkingSpots.append(spot)
+            }
         }
         parkingSpots[.twoWheeler] = twoWheelerParkingSpots
         parkingSpots[.fourWheeler] = fourWheelerParkingSpots

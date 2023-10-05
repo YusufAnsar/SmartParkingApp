@@ -25,6 +25,10 @@
 		F52507082ACE3F190008FFC3 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52507072ACE3F190008FFC3 /* UIViewController+Alert.swift */; };
 		F525070B2ACE46160008FFC3 /* ParkingLotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52507092ACE46160008FFC3 /* ParkingLotViewController.swift */; };
 		F525070C2ACE46160008FFC3 /* ParkingLotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F525070A2ACE46160008FFC3 /* ParkingLotViewController.xib */; };
+		F525070E2ACE52BD0008FFC3 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F525070D2ACE52BD0008FFC3 /* CustomButton.swift */; };
+		F52507102ACE555C0008FFC3 /* ParkingAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F525070F2ACE555C0008FFC3 /* ParkingAction.swift */; };
+		F52507132ACE568F0008FFC3 /* SelectVehicleTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52507112ACE568F0008FFC3 /* SelectVehicleTypeViewController.swift */; };
+		F52507142ACE568F0008FFC3 /* SelectVehicleTypeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F52507122ACE568F0008FFC3 /* SelectVehicleTypeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +71,10 @@
 		F52507072ACE3F190008FFC3 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		F52507092ACE46160008FFC3 /* ParkingLotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingLotViewController.swift; sourceTree = "<group>"; };
 		F525070A2ACE46160008FFC3 /* ParkingLotViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ParkingLotViewController.xib; sourceTree = "<group>"; };
+		F525070D2ACE52BD0008FFC3 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		F525070F2ACE555C0008FFC3 /* ParkingAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingAction.swift; sourceTree = "<group>"; };
+		F52507112ACE568F0008FFC3 /* SelectVehicleTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectVehicleTypeViewController.swift; sourceTree = "<group>"; };
+		F52507122ACE568F0008FFC3 /* SelectVehicleTypeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectVehicleTypeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				F52506C82ACDABE10008FFC3 /* AppDelegate.swift */,
+				F52507112ACE568F0008FFC3 /* SelectVehicleTypeViewController.swift */,
+				F52507122ACE568F0008FFC3 /* SelectVehicleTypeViewController.xib */,
 				F52506CA2ACDABE10008FFC3 /* SceneDelegate.swift */,
 				F52506CE2ACDABE10008FFC3 /* Main.storyboard */,
 				F52506D42ACDABE20008FFC3 /* Assets.xcassets */,
@@ -133,6 +143,8 @@
 				F52507072ACE3F190008FFC3 /* UIViewController+Alert.swift */,
 				F52507092ACE46160008FFC3 /* ParkingLotViewController.swift */,
 				F525070A2ACE46160008FFC3 /* ParkingLotViewController.xib */,
+				F525070D2ACE52BD0008FFC3 /* CustomButton.swift */,
+				F525070F2ACE555C0008FFC3 /* ParkingAction.swift */,
 			);
 			path = MyParkingLotApp;
 			sourceTree = "<group>";
@@ -260,6 +272,7 @@
 			files = (
 				F52506D82ACDABE20008FFC3 /* LaunchScreen.storyboard in Resources */,
 				F52506D52ACDABE20008FFC3 /* Assets.xcassets in Resources */,
+				F52507142ACE568F0008FFC3 /* SelectVehicleTypeViewController.xib in Resources */,
 				F52506D02ACDABE10008FFC3 /* Main.storyboard in Resources */,
 				F525070C2ACE46160008FFC3 /* ParkingLotViewController.xib in Resources */,
 			);
@@ -290,10 +303,13 @@
 				F52507062ACE32210008FFC3 /* CreatingParkingLotViewController.swift in Sources */,
 				F52506C92ACDABE10008FFC3 /* AppDelegate.swift in Sources */,
 				F52507022ACDC2C00008FFC3 /* Ticket.swift in Sources */,
+				F52507102ACE555C0008FFC3 /* ParkingAction.swift in Sources */,
 				F52507042ACDC3920008FFC3 /* ParkingReceipt.swift in Sources */,
 				F52507082ACE3F190008FFC3 /* UIViewController+Alert.swift in Sources */,
+				F52507132ACE568F0008FFC3 /* SelectVehicleTypeViewController.swift in Sources */,
 				F52506D32ACDABE10008FFC3 /* MyParkingLotApp.xcdatamodeld in Sources */,
 				F52506FC2ACDAC7F0008FFC3 /* ParkingSpot.swift in Sources */,
+				F525070E2ACE52BD0008FFC3 /* CustomButton.swift in Sources */,
 				F52507002ACDBB680008FFC3 /* ParkingLot.swift in Sources */,
 				F52506CB2ACDABE10008FFC3 /* SceneDelegate.swift in Sources */,
 				F525070B2ACE46160008FFC3 /* ParkingLotViewController.swift in Sources */,

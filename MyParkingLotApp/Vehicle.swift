@@ -7,8 +7,19 @@
 
 import Foundation
 
-enum Vehicle {
+enum Vehicle: CaseIterable {
     case twoWheeler
     case fourWheeler
     case heavy
+
+    var description: String {
+        switch self {
+            case .twoWheeler:
+                return "Two Wheeler"
+            case .fourWheeler:
+                return "Four Wheeler"
+            case .heavy:
+                return "Heavy Vehicle"
+        }
+    }
 }
