@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lBf-Xn-89r">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,68 +13,212 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="CreatingParkingLotViewController" customModule="MyParkingLotApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="1500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="crX-Kb-p9v">
-                                <rect key="frame" x="0.0" y="155" width="393" height="663"/>
+                                <rect key="frame" x="0.0" y="103" width="430" height="1363"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MYJ-yN-eB7">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="663"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="430" height="1028"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Tni-kg-Gxp">
-                                                <rect key="frame" x="16" y="20" width="361" height="283"/>
+                                                <rect key="frame" x="16" y="20" width="398" height="988"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pED-tl-Pm5">
-                                                        <rect key="frame" x="0.0" y="0.0" width="361" height="62.333333333333336"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="398" height="62.333333333333336"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No of two wheelers parking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lxm-gp-qBM">
-                                                                <rect key="frame" x="0.0" y="0.0" width="361" height="20.333333333333332"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="398" height="20.333333333333332"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oFW-WM-PC9">
-                                                                <rect key="frame" x="0.0" y="28.333333333333343" width="361" height="34"/>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oFW-WM-PC9" userLabel="1">
+                                                                <rect key="frame" x="0.0" y="28.333333333333343" width="398" height="34"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                             </textField>
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="a69-lJ-cMR">
-                                                        <rect key="frame" x="0.0" y="78.333333333333343" width="361" height="62.333333333333343"/>
+                                                        <rect key="frame" x="0.0" y="78.333333333333343" width="398" height="62.333333333333343"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No of four wheelers parking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o70-md-1yA">
-                                                                <rect key="frame" x="0.0" y="0.0" width="361" height="20.333333333333332"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="398" height="20.333333333333332"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j5s-TJ-tPS">
-                                                                <rect key="frame" x="0.0" y="28.333333333333343" width="361" height="34"/>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j5s-TJ-tPS" userLabel="2">
+                                                                <rect key="frame" x="0.0" y="28.333333333333314" width="398" height="34"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                             </textField>
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="B6t-Eg-Vz6">
-                                                        <rect key="frame" x="0.0" y="156.66666666666669" width="361" height="62.333333333333343"/>
+                                                        <rect key="frame" x="0.0" y="156.66666666666669" width="398" height="62.333333333333343"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No of heavy vehicles parking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jgm-Pq-76z">
-                                                                <rect key="frame" x="0.0" y="0.0" width="361" height="20.333333333333332"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="398" height="20.333333333333332"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZFF-3D-ljW">
-                                                                <rect key="frame" x="0.0" y="28.333333333333314" width="361" height="34"/>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZFF-3D-ljW" userLabel="3">
+                                                                <rect key="frame" x="0.0" y="28.333333333333314" width="398" height="34"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7z2-xK-HCE">
+                                                        <rect key="frame" x="0.0" y="235.00000000000003" width="398" height="62.333333333333343"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Two wheeler Fee [0, 4) hours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbC-KB-S3n">
+                                                                <rect key="frame" x="0.0" y="0.0" width="398" height="20.333333333333332"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="30" borderStyle="roundedRect" placeholder="Enter the number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="izQ-Sc-iD2" userLabel="4">
+                                                                <rect key="frame" x="0.0" y="28.333333333333314" width="398" height="34"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="zNb-13-QFd">
+                                                        <rect key="frame" x="0.0" y="313.33333333333331" width="398" height="62.333333333333314"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Two wheeler Fee [4, 12) hours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Z6-cw-1jZ">
+                                                                <rect key="frame" x="0.0" y="0.0" width="398" height="20.333333333333332"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="60" borderStyle="roundedRect" placeholder="Enter the number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zqU-00-ugN" userLabel="5">
+                                                                <rect key="frame" x="0.0" y="28.333333333333371" width="398" height="34"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jhF-K9-aVi">
+                                                        <rect key="frame" x="0.0" y="391.66666666666663" width="398" height="62.333333333333314"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Two wheeler Fee [12, §) hours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9L-H8-IpF">
+                                                                <rect key="frame" x="0.0" y="0.0" width="398" height="20.333333333333332"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="100" borderStyle="roundedRect" placeholder="Enter the number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="txR-oE-dVB" userLabel="6">
+                                                                <rect key="frame" x="0.0" y="28.333333333333371" width="398" height="34"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jK1-UJ-Cpx">
+                                                        <rect key="frame" x="0.0" y="470" width="398" height="62.333333333333371"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Four wheeler Fee [0, 4) hours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgc-D1-F0w">
+                                                                <rect key="frame" x="0.0" y="0.0" width="398" height="20.333333333333332"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="60" borderStyle="roundedRect" placeholder="Enter the number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jyx-ge-2jP" userLabel="7">
+                                                                <rect key="frame" x="0.0" y="28.333333333333371" width="398" height="34"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="RXY-Nr-FLV">
+                                                        <rect key="frame" x="0.0" y="548.33333333333337" width="398" height="62.333333333333371"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Four wheeler Fee [4, 12) hours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rt2-ha-74G">
+                                                                <rect key="frame" x="0.0" y="0.0" width="398" height="20.333333333333332"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="120" borderStyle="roundedRect" placeholder="Enter the number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ydL-jk-UC6" userLabel="8">
+                                                                <rect key="frame" x="0.0" y="28.333333333333258" width="398" height="34"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="MTi-Ec-PGg">
+                                                        <rect key="frame" x="0.0" y="626.66666666666663" width="398" height="62.333333333333371"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Four wheeler Fee [12, §) hours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wt8-Vd-Mx8">
+                                                                <rect key="frame" x="0.0" y="0.0" width="398" height="20.333333333333332"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="200" borderStyle="roundedRect" placeholder="Enter the number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nhj-M0-ZN5" userLabel="9">
+                                                                <rect key="frame" x="0.0" y="28.333333333333371" width="398" height="34"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="V4R-fs-oO6">
+                                                        <rect key="frame" x="0.0" y="705" width="398" height="62.333333333333371"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heavy Vehicle Fee [0, 4) hours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rdi-ji-paM">
+                                                                <rect key="frame" x="0.0" y="0.0" width="398" height="20.333333333333332"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="60" borderStyle="roundedRect" placeholder="Enter the number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EYr-Jc-GG8" userLabel="10">
+                                                                <rect key="frame" x="0.0" y="28.333333333333371" width="398" height="34"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ezA-de-ZxD">
+                                                        <rect key="frame" x="0.0" y="783.33333333333337" width="398" height="62.333333333333371"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heavy Vehicle Fee [4, 12) hours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sQG-ek-cZU">
+                                                                <rect key="frame" x="0.0" y="0.0" width="398" height="20.333333333333332"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="120" borderStyle="roundedRect" placeholder="Enter the number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lDw-fN-hD9" userLabel="11">
+                                                                <rect key="frame" x="0.0" y="28.333333333333258" width="398" height="34"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="foM-XF-GMJ">
+                                                        <rect key="frame" x="0.0" y="861.66666666666663" width="398" height="62.333333333333371"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heavy Vehicle Fee [12, §) hours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RmI-1K-re6">
+                                                                <rect key="frame" x="0.0" y="0.0" width="398" height="20.333333333333332"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="200" borderStyle="roundedRect" placeholder="Enter the number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WsX-mh-y4j" userLabel="12">
+                                                                <rect key="frame" x="0.0" y="28.333333333333371" width="398" height="34"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                             </textField>
                                                         </subviews>
                                                     </stackView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5b-pa-czl">
-                                                        <rect key="frame" x="0.0" y="235" width="361" height="48"/>
+                                                        <rect key="frame" x="0.0" y="940" width="398" height="48"/>
                                                         <color key="backgroundColor" systemColor="systemPinkColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="48" id="ElE-wz-myu"/>
@@ -96,6 +240,7 @@
                                             <constraint firstItem="Tni-kg-Gxp" firstAttribute="leading" secondItem="MYJ-yN-eB7" secondAttribute="leading" constant="16" id="7Sv-HP-PGg"/>
                                             <constraint firstAttribute="trailing" secondItem="Tni-kg-Gxp" secondAttribute="trailing" constant="16" id="Sb5-6r-EOe"/>
                                             <constraint firstItem="Tni-kg-Gxp" firstAttribute="top" secondItem="MYJ-yN-eB7" secondAttribute="top" constant="20" id="UPk-wS-MFc"/>
+                                            <constraint firstAttribute="bottom" secondItem="Tni-kg-Gxp" secondAttribute="bottom" constant="20" id="q98-9S-LDw"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -103,7 +248,6 @@
                                     <constraint firstItem="MYJ-yN-eB7" firstAttribute="top" secondItem="d3j-rp-NXS" secondAttribute="top" id="AIT-D4-uaW"/>
                                     <constraint firstItem="MYJ-yN-eB7" firstAttribute="width" secondItem="crX-Kb-p9v" secondAttribute="width" id="F6s-jw-Rse"/>
                                     <constraint firstItem="MYJ-yN-eB7" firstAttribute="bottom" secondItem="d3j-rp-NXS" secondAttribute="bottom" id="beu-t5-vVD"/>
-                                    <constraint firstItem="MYJ-yN-eB7" firstAttribute="height" secondItem="crX-Kb-p9v" secondAttribute="height" id="ldK-aE-NfC"/>
                                     <constraint firstItem="MYJ-yN-eB7" firstAttribute="leading" secondItem="d3j-rp-NXS" secondAttribute="leading" id="voa-wx-j9k"/>
                                     <constraint firstItem="MYJ-yN-eB7" firstAttribute="trailing" secondItem="d3j-rp-NXS" secondAttribute="trailing" id="wlE-mp-RyK"/>
                                 </constraints>
@@ -121,11 +265,22 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="pjI-u3-0NI"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="430" height="1500"/>
                     <connections>
-                        <outlet property="fourWheelersTextField" destination="j5s-TJ-tPS" id="ofk-fA-ceN"/>
-                        <outlet property="heavyVehiclesTextField" destination="ZFF-3D-ljW" id="y4E-7T-8py"/>
                         <outlet property="scrollView" destination="crX-Kb-p9v" id="muO-Z4-A8D"/>
-                        <outlet property="twoWheelersTextField" destination="oFW-WM-PC9" id="Mdh-0Z-Chz"/>
+                        <outletCollection property="inputTextFields" destination="oFW-WM-PC9" collectionClass="NSMutableArray" id="VZD-Gk-ahP"/>
+                        <outletCollection property="inputTextFields" destination="j5s-TJ-tPS" collectionClass="NSMutableArray" id="f3v-d2-zcJ"/>
+                        <outletCollection property="inputTextFields" destination="ZFF-3D-ljW" collectionClass="NSMutableArray" id="Qbv-BH-CO8"/>
+                        <outletCollection property="inputTextFields" destination="izQ-Sc-iD2" collectionClass="NSMutableArray" id="7Vd-hB-4h9"/>
+                        <outletCollection property="inputTextFields" destination="zqU-00-ugN" collectionClass="NSMutableArray" id="dyk-Zb-m2v"/>
+                        <outletCollection property="inputTextFields" destination="txR-oE-dVB" collectionClass="NSMutableArray" id="VXG-EC-1Mc"/>
+                        <outletCollection property="inputTextFields" destination="Jyx-ge-2jP" collectionClass="NSMutableArray" id="ed2-7T-4lJ"/>
+                        <outletCollection property="inputTextFields" destination="ydL-jk-UC6" collectionClass="NSMutableArray" id="dkQ-z3-4YC"/>
+                        <outletCollection property="inputTextFields" destination="Nhj-M0-ZN5" collectionClass="NSMutableArray" id="wgV-yL-7bN"/>
+                        <outletCollection property="inputTextFields" destination="EYr-Jc-GG8" collectionClass="NSMutableArray" id="RmX-by-rkw"/>
+                        <outletCollection property="inputTextFields" destination="lDw-fN-hD9" collectionClass="NSMutableArray" id="8Uh-ld-Idh"/>
+                        <outletCollection property="inputTextFields" destination="WsX-mh-y4j" collectionClass="NSMutableArray" id="6QF-aA-dJx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -137,8 +292,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lBf-Xn-89r" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="iqf-NO-67I">
-                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iqf-NO-67I">
+                        <rect key="frame" x="0.0" y="59" width="430" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" systemColor="systemPinkColor"/>
                     </navigationBar>

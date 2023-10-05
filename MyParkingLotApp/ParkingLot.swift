@@ -9,12 +9,15 @@ import Foundation
 
 class ParkingLot {
     let parkingSpots: [Vehicle: [ParkingSpot]]
+    let feeModel: ParkingFee
     var allTickets: [Ticket] = []
     var activeTickets: [Ticket] = []
     var receipts: [ParkingReceipt] = []
 
-    init(parkingSpots: [Vehicle: [ParkingSpot]]) {
+
+    init(parkingSpots: [Vehicle: [ParkingSpot]], feeModel: ParkingFee) {
         self.parkingSpots = parkingSpots
+        self.feeModel = feeModel
     }
 
     var isFull: Bool {

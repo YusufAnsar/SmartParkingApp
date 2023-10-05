@@ -39,6 +39,7 @@
 		F525074A2ACE9D920008FFC3 /* ReceiptDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F52507482ACE9D920008FFC3 /* ReceiptDetailsViewController.xib */; };
 		F525074D2ACEA2420008FFC3 /* ReceiptsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F525074B2ACEA2420008FFC3 /* ReceiptsListViewController.swift */; };
 		F525074E2ACEA2420008FFC3 /* ReceiptsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F525074C2ACEA2420008FFC3 /* ReceiptsListViewController.xib */; };
+		F52507502ACEA80D0008FFC3 /* ParkingFee.swift in Sources */ = {isa = PBXBuildFile; fileRef = F525074F2ACEA80D0008FFC3 /* ParkingFee.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 		F52507482ACE9D920008FFC3 /* ReceiptDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReceiptDetailsViewController.xib; sourceTree = "<group>"; };
 		F525074B2ACEA2420008FFC3 /* ReceiptsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptsListViewController.swift; sourceTree = "<group>"; };
 		F525074C2ACEA2420008FFC3 /* ReceiptsListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReceiptsListViewController.xib; sourceTree = "<group>"; };
+		F525074F2ACEA80D0008FFC3 /* ParkingFee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingFee.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 				F52506D92ACDABE20008FFC3 /* Info.plist */,
 				F52506D12ACDABE10008FFC3 /* MyParkingLotApp.xcdatamodeld */,
 				F52507012ACDC2C00008FFC3 /* Ticket.swift */,
+				F525074F2ACEA80D0008FFC3 /* ParkingFee.swift */,
 				F52506FF2ACDBB680008FFC3 /* ParkingLot.swift */,
 				F52506FD2ACDB5AC0008FFC3 /* Vehicle.swift */,
 				F52506FB2ACDAC7F0008FFC3 /* ParkingSpot.swift */,
@@ -349,6 +352,7 @@
 				F525070E2ACE52BD0008FFC3 /* CustomButton.swift in Sources */,
 				F52507002ACDBB680008FFC3 /* ParkingLot.swift in Sources */,
 				F52506CB2ACDABE10008FFC3 /* SceneDelegate.swift in Sources */,
+				F52507502ACEA80D0008FFC3 /* ParkingFee.swift in Sources */,
 				F525070B2ACE46160008FFC3 /* ParkingLotViewController.swift in Sources */,
 				F525074D2ACEA2420008FFC3 /* ReceiptsListViewController.swift in Sources */,
 				F52507452ACE83330008FFC3 /* TicketsListViewController.swift in Sources */,
