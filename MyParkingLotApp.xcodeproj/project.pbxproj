@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		F52506C92ACDABE10008FFC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52506C82ACDABE10008FFC3 /* AppDelegate.swift */; };
 		F52506CB2ACDABE10008FFC3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52506CA2ACDABE10008FFC3 /* SceneDelegate.swift */; };
-		F52506CD2ACDABE10008FFC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52506CC2ACDABE10008FFC3 /* ViewController.swift */; };
 		F52506D02ACDABE10008FFC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52506CE2ACDABE10008FFC3 /* Main.storyboard */; };
 		F52506D32ACDABE10008FFC3 /* MyParkingLotApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F52506D12ACDABE10008FFC3 /* MyParkingLotApp.xcdatamodeld */; };
 		F52506D52ACDABE20008FFC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F52506D42ACDABE20008FFC3 /* Assets.xcassets */; };
@@ -17,6 +16,15 @@
 		F52506E32ACDABE20008FFC3 /* MyParkingLotAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52506E22ACDABE20008FFC3 /* MyParkingLotAppTests.swift */; };
 		F52506ED2ACDABE20008FFC3 /* MyParkingLotAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52506EC2ACDABE20008FFC3 /* MyParkingLotAppUITests.swift */; };
 		F52506EF2ACDABE20008FFC3 /* MyParkingLotAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52506EE2ACDABE20008FFC3 /* MyParkingLotAppUITestsLaunchTests.swift */; };
+		F52506FC2ACDAC7F0008FFC3 /* ParkingSpot.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52506FB2ACDAC7F0008FFC3 /* ParkingSpot.swift */; };
+		F52506FE2ACDB5AC0008FFC3 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52506FD2ACDB5AC0008FFC3 /* Vehicle.swift */; };
+		F52507002ACDBB680008FFC3 /* ParkingLot.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52506FF2ACDBB680008FFC3 /* ParkingLot.swift */; };
+		F52507022ACDC2C00008FFC3 /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52507012ACDC2C00008FFC3 /* Ticket.swift */; };
+		F52507042ACDC3920008FFC3 /* ParkingReceipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52507032ACDC3920008FFC3 /* ParkingReceipt.swift */; };
+		F52507062ACE32210008FFC3 /* CreatingParkingLotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52507052ACE32200008FFC3 /* CreatingParkingLotViewController.swift */; };
+		F52507082ACE3F190008FFC3 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52507072ACE3F190008FFC3 /* UIViewController+Alert.swift */; };
+		F525070B2ACE46160008FFC3 /* ParkingLotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52507092ACE46160008FFC3 /* ParkingLotViewController.swift */; };
+		F525070C2ACE46160008FFC3 /* ParkingLotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F525070A2ACE46160008FFC3 /* ParkingLotViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +48,6 @@
 		F52506C52ACDABE10008FFC3 /* MyParkingLotApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyParkingLotApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F52506C82ACDABE10008FFC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F52506CA2ACDABE10008FFC3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F52506CC2ACDABE10008FFC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F52506CF2ACDABE10008FFC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F52506D22ACDABE10008FFC3 /* MyParkingLotApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyParkingLotApp.xcdatamodel; sourceTree = "<group>"; };
 		F52506D42ACDABE20008FFC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +58,15 @@
 		F52506E82ACDABE20008FFC3 /* MyParkingLotAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyParkingLotAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F52506EC2ACDABE20008FFC3 /* MyParkingLotAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyParkingLotAppUITests.swift; sourceTree = "<group>"; };
 		F52506EE2ACDABE20008FFC3 /* MyParkingLotAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyParkingLotAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F52506FB2ACDAC7F0008FFC3 /* ParkingSpot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingSpot.swift; sourceTree = "<group>"; };
+		F52506FD2ACDB5AC0008FFC3 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		F52506FF2ACDBB680008FFC3 /* ParkingLot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingLot.swift; sourceTree = "<group>"; };
+		F52507012ACDC2C00008FFC3 /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
+		F52507032ACDC3920008FFC3 /* ParkingReceipt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingReceipt.swift; sourceTree = "<group>"; };
+		F52507052ACE32200008FFC3 /* CreatingParkingLotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatingParkingLotViewController.swift; sourceTree = "<group>"; };
+		F52507072ACE3F190008FFC3 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+		F52507092ACE46160008FFC3 /* ParkingLotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingLotViewController.swift; sourceTree = "<group>"; };
+		F525070A2ACE46160008FFC3 /* ParkingLotViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ParkingLotViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,12 +119,20 @@
 			children = (
 				F52506C82ACDABE10008FFC3 /* AppDelegate.swift */,
 				F52506CA2ACDABE10008FFC3 /* SceneDelegate.swift */,
-				F52506CC2ACDABE10008FFC3 /* ViewController.swift */,
 				F52506CE2ACDABE10008FFC3 /* Main.storyboard */,
 				F52506D42ACDABE20008FFC3 /* Assets.xcassets */,
 				F52506D62ACDABE20008FFC3 /* LaunchScreen.storyboard */,
 				F52506D92ACDABE20008FFC3 /* Info.plist */,
 				F52506D12ACDABE10008FFC3 /* MyParkingLotApp.xcdatamodeld */,
+				F52507012ACDC2C00008FFC3 /* Ticket.swift */,
+				F52506FF2ACDBB680008FFC3 /* ParkingLot.swift */,
+				F52506FD2ACDB5AC0008FFC3 /* Vehicle.swift */,
+				F52506FB2ACDAC7F0008FFC3 /* ParkingSpot.swift */,
+				F52507032ACDC3920008FFC3 /* ParkingReceipt.swift */,
+				F52507052ACE32200008FFC3 /* CreatingParkingLotViewController.swift */,
+				F52507072ACE3F190008FFC3 /* UIViewController+Alert.swift */,
+				F52507092ACE46160008FFC3 /* ParkingLotViewController.swift */,
+				F525070A2ACE46160008FFC3 /* ParkingLotViewController.xib */,
 			);
 			path = MyParkingLotApp;
 			sourceTree = "<group>";
@@ -237,6 +261,7 @@
 				F52506D82ACDABE20008FFC3 /* LaunchScreen.storyboard in Resources */,
 				F52506D52ACDABE20008FFC3 /* Assets.xcassets in Resources */,
 				F52506D02ACDABE10008FFC3 /* Main.storyboard in Resources */,
+				F525070C2ACE46160008FFC3 /* ParkingLotViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +286,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F52506CD2ACDABE10008FFC3 /* ViewController.swift in Sources */,
+				F52506FE2ACDB5AC0008FFC3 /* Vehicle.swift in Sources */,
+				F52507062ACE32210008FFC3 /* CreatingParkingLotViewController.swift in Sources */,
 				F52506C92ACDABE10008FFC3 /* AppDelegate.swift in Sources */,
+				F52507022ACDC2C00008FFC3 /* Ticket.swift in Sources */,
+				F52507042ACDC3920008FFC3 /* ParkingReceipt.swift in Sources */,
+				F52507082ACE3F190008FFC3 /* UIViewController+Alert.swift in Sources */,
 				F52506D32ACDABE10008FFC3 /* MyParkingLotApp.xcdatamodeld in Sources */,
+				F52506FC2ACDAC7F0008FFC3 /* ParkingSpot.swift in Sources */,
+				F52507002ACDBB680008FFC3 /* ParkingLot.swift in Sources */,
 				F52506CB2ACDABE10008FFC3 /* SceneDelegate.swift in Sources */,
+				F525070B2ACE46160008FFC3 /* ParkingLotViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
