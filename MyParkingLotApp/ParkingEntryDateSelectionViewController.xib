@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ParkingEntryDateSelectionViewController" customModule="MyParkingLotApp" customModuleProvider="target">
+            <connections>
+                <outlet property="entryDateLabel" destination="nvY-wm-itY" id="1fb-bz-4Xu"/>
+                <outlet property="entryDatePicker" destination="rs2-f4-Ja8" id="28a-4d-Luv"/>
+                <outlet property="spotNoLabel" destination="WX4-v6-UtO" id="DW3-kE-kHO"/>
+                <outlet property="vehicleTypeLabel" destination="M6T-fC-CtS" id="Tjm-nm-xSs"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ZbF-VC-6QF">
+                    <rect key="frame" x="16" y="79" width="361" height="337"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selected Vehicle:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M6T-fC-CtS">
+                            <rect key="frame" x="0.0" y="0.0" width="361" height="20.333333333333332"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selected Vehicle:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WX4-v6-UtO">
+                            <rect key="frame" x="0.0" y="40.333333333333329" width="361" height="20.333333333333329"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entry Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nvY-wm-itY">
+                            <rect key="frame" x="0.0" y="80.666666666666657" width="361" height="20.333333333333329"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="rs2-f4-Ja8">
+                            <rect key="frame" x="0.0" y="121" width="361" height="216"/>
+                            <connections>
+                                <action selector="datePickerActionWithSender:" destination="-1" eventType="valueChanged" id="cgj-Ve-fkK"/>
+                            </connections>
+                        </datePicker>
+                    </subviews>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kpO-eY-Ewa">
+                    <rect key="frame" x="0.0" y="416" width="393" height="402"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S6x-G7-bsp" customClass="CustomButton" customModule="MyParkingLotApp" customModuleProvider="target">
+                            <rect key="frame" x="40" y="177" width="313" height="48"/>
+                            <color key="backgroundColor" systemColor="systemPinkColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="NwO-tg-nLV"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Generate Ticket">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="defaultBackgroundColor">
+                                    <color key="value" systemColor="systemPinkColor"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="disabledBackgroundColor">
+                                    <color key="value" systemColor="systemGrayColor"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="generateTicketButtonClicked:" destination="-1" eventType="touchUpInside" id="LIi-BM-ZXz"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="S6x-G7-bsp" firstAttribute="leading" secondItem="kpO-eY-Ewa" secondAttribute="leading" constant="40" id="obN-ag-Swn"/>
+                        <constraint firstItem="S6x-G7-bsp" firstAttribute="centerY" secondItem="kpO-eY-Ewa" secondAttribute="centerY" id="rHi-Fr-ERi"/>
+                        <constraint firstAttribute="trailing" secondItem="S6x-G7-bsp" secondAttribute="trailing" constant="40" id="xM7-4Z-eTJ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ZbF-VC-6QF" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="5Ld-aQ-VNa"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="kpO-eY-Ewa" secondAttribute="bottom" id="7v6-61-gAM"/>
+                <constraint firstItem="ZbF-VC-6QF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="LIZ-cS-tUP"/>
+                <constraint firstItem="kpO-eY-Ewa" firstAttribute="top" secondItem="ZbF-VC-6QF" secondAttribute="bottom" id="WKt-jZ-4WF"/>
+                <constraint firstAttribute="trailing" secondItem="ZbF-VC-6QF" secondAttribute="trailing" constant="16" id="efo-YZ-wQR"/>
+                <constraint firstItem="kpO-eY-Ewa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="jGr-4X-duj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kpO-eY-Ewa" secondAttribute="trailing" id="nfj-8j-M0J"/>
+            </constraints>
+            <point key="canvasLocation" x="-5" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

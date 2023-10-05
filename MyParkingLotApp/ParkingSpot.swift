@@ -7,10 +7,10 @@
 
 import Foundation
 
-struct ParkingSpot {
+class ParkingSpot {
 
-    private let spotNo: Int
-    private let vehicleType: Vehicle
+    let spotNo: Int
+    let vehicleType: Vehicle
     private(set) var isFree = true
 
     init(spotNo: Int, vehicleType: Vehicle) {
@@ -18,11 +18,11 @@ struct ParkingSpot {
         self.vehicleType = vehicleType
     }
 
-    mutating func parkVehicle() {
+    func parkVehicle() {
         self.isFree = false
     }
 
-    mutating func unparkVehicle() {
+    func unparkVehicle() {
         self.isFree = true
     }
 }

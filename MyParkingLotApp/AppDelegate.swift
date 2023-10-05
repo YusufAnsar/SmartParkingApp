@@ -79,3 +79,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+func getFormattedDateString(for date: Date) -> String {
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = "dd-MMM-yyyy HH:mm:ss"
+    return dateFormatter.string(from: date)
+}
+

@@ -12,12 +12,9 @@ class SelectVehicleTypeViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     private static let cellId = "cellId"
     private let parkingLot: ParkingLot
-    private let actionType: ParkingAction
 
-
-    init(parkingLot: ParkingLot, actionType: ParkingAction) {
+    init(parkingLot: ParkingLot) {
         self.parkingLot = parkingLot
-        self.actionType = actionType
         super.init(nibName: String(describing: SelectVehicleTypeViewController.self), bundle: nil)
     }
 
@@ -39,8 +36,11 @@ class SelectVehicleTypeViewController: UIViewController {
 
     private func validateVehicleTypeSelected(at index: Int) {
         let vehicle = Vehicle.allCases[index]
-        if parkingLot.isParkingAvailable(forType: vehicle) {
-
+        if let parkingSpot = parkingLot.getNextAvailableSpot(forType: vehicle) {
+            let entryDateInputVC = ParkingEntryDateSelectionViewController(parkingLot: parkingLot,
+                                                                           selectedVehicle: vehicle,
+                                                                           parkingSpot: parkingSpot)
+            navigationController?.pushViewController(entryDateInputVC, animated: true)
         } else {
             presentAlertWithTitleAndMessage(title: "",
                                             message: "No parking spot available for " + vehicle.description,
@@ -58,6 +58,7 @@ extension SelectVehicleTypeViewController: UITableViewDataSource, UITableViewDel
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: Self.cellId, for: indexPath)
         cell.textLabel?.text = Vehicle.allCases[indexPath.row].description
+        cell.accessoryType = .disclosureIndicator
         return cell
     }
 

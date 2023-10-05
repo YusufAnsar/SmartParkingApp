@@ -14,6 +14,8 @@ class ParkingLotViewController: UIViewController {
     @IBOutlet weak var heavyVehiclesParkingLabel: UILabel!
     @IBOutlet weak var parkButton: CustomButton!
     @IBOutlet weak var unparkButton: CustomButton!
+    @IBOutlet weak var allTicketsButton: CustomButton!
+    @IBOutlet weak var allReceiptsButton: CustomButton!
 
     private let parkingLot: ParkingLot
 
@@ -36,15 +38,28 @@ class ParkingLotViewController: UIViewController {
         updateAvailableParkingNumbers()
         parkButton.isEnabled = !parkingLot.isFull
         unparkButton.isEnabled = !parkingLot.activeTickets.isEmpty
+        allTicketsButton.isEnabled = !parkingLot.allTickets.isEmpty
+        allReceiptsButton.isEnabled = !parkingLot.receipts.isEmpty
     }
 
     @IBAction func parkButtonClicked(_ sender: Any) {
-        let selectVehicleTypeVC = SelectVehicleTypeViewController(parkingLot: parkingLot, actionType: .park)
+        let selectVehicleTypeVC = SelectVehicleTypeViewController(parkingLot: parkingLot)
         navigationController?.pushViewController(selectVehicleTypeVC, animated: true)
     }
 
     @IBAction func unparkButtonClicked(_ sender: Any) {
+        let ticketsListVC = TicketsListViewController(parkingLot: parkingLot, ticketListAction: .unpark)
+        navigationController?.pushViewController(ticketsListVC, animated: true)
+    }
 
+    @IBAction func allTicketsButtonClicked(_ sender: Any) {
+        let ticketsListVC = TicketsListViewController(parkingLot: parkingLot, ticketListAction: .viewTicket)
+        navigationController?.pushViewController(ticketsListVC, animated: true)
+    }
+
+    @IBAction func allReceiptsButtonClicked(_ sender: Any) {
+        let receiptListVC = ReceiptsListViewController(parkingLot: parkingLot)
+        navigationController?.pushViewController(receiptListVC, animated: true)
     }
 
     private func updateAvailableParkingNumbers() {

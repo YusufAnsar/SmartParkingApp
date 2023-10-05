@@ -10,5 +10,6 @@ import Foundation
 struct Ticket {
     let ticketNo: Int
     let spotNo: Int
+    let vehicleType: Vehicle
     let entryDate: Date
 }

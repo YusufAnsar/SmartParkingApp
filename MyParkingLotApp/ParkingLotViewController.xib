@@ -10,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ParkingLotViewController" customModule="MyParkingLotApp" customModuleProvider="target">
             <connections>
+                <outlet property="allReceiptsButton" destination="d1Z-99-ezf" id="5nB-vy-FYQ"/>
+                <outlet property="allTicketsButton" destination="uDq-eI-GNT" id="nHm-iH-XsB"/>
                 <outlet property="fourWheelersParkingLabel" destination="u6y-QD-gRB" id="roI-Ft-Q4X"/>
                 <outlet property="heavyVehiclesParkingLabel" destination="YGU-Kh-opP" id="JeT-av-oHB"/>
                 <outlet property="parkButton" destination="Vnm-M0-cYZ" id="41a-l5-Nqt"/>
@@ -46,8 +48,8 @@
                         </label>
                     </subviews>
                 </stackView>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="jrS-OF-Tof">
-                    <rect key="frame" x="40" y="212" width="313" height="136"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="jrS-OF-Tof">
+                    <rect key="frame" x="40" y="196" width="313" height="264"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vnm-M0-cYZ" customClass="CustomButton" customModule="MyParkingLotApp" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="313" height="48"/>
@@ -73,7 +75,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kmo-5j-cvx" customClass="CustomButton" customModule="MyParkingLotApp" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="88" width="313" height="48"/>
+                            <rect key="frame" x="0.0" y="72" width="313" height="48"/>
                             <color key="backgroundColor" systemColor="systemPinkColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="48" id="vQB-DN-Y8v"/>
@@ -95,6 +97,52 @@
                                 <action selector="unparkButtonClicked:" destination="-1" eventType="touchUpInside" id="pzI-3o-DhC"/>
                             </connections>
                         </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDq-eI-GNT" customClass="CustomButton" customModule="MyParkingLotApp" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="144" width="313" height="48"/>
+                            <color key="backgroundColor" systemColor="systemPinkColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="H2a-g6-tHv"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="All Tickets">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="disabledBackgroundColor">
+                                    <color key="value" systemColor="systemGrayColor"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="defaultBackgroundColor">
+                                    <color key="value" systemColor="systemPinkColor"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="allTicketsButtonClicked:" destination="-1" eventType="touchUpInside" id="mjx-sk-flP"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1Z-99-ezf" customClass="CustomButton" customModule="MyParkingLotApp" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="216" width="313" height="48"/>
+                            <color key="backgroundColor" systemColor="systemPinkColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="nFD-FJ-VQW"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="All Receipts">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="disabledBackgroundColor">
+                                    <color key="value" systemColor="systemGrayColor"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="defaultBackgroundColor">
+                                    <color key="value" systemColor="systemPinkColor"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="allReceiptsButtonClicked:" destination="-1" eventType="touchUpInside" id="wwY-2l-Te4"/>
+                            </connections>
+                        </button>
                     </subviews>
                 </stackView>
             </subviews>
@@ -106,7 +154,7 @@
                 <constraint firstItem="GHK-UP-X2z" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="dAw-xV-oUU"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="jrS-OF-Tof" secondAttribute="trailing" constant="40" id="fqu-7w-ejT"/>
                 <constraint firstItem="GHK-UP-X2z" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="rUL-up-Q6i"/>
-                <constraint firstItem="jrS-OF-Tof" firstAttribute="top" secondItem="GHK-UP-X2z" secondAttribute="bottom" constant="40" id="uc6-GM-Osm"/>
+                <constraint firstItem="jrS-OF-Tof" firstAttribute="top" secondItem="GHK-UP-X2z" secondAttribute="bottom" constant="24" id="uc6-GM-Osm"/>
             </constraints>
             <point key="canvasLocation" x="-5" y="20"/>
         </view>
