@@ -151,39 +151,16 @@
 		F52506C72ACDABE10008FFC3 /* MyParkingLotApp */ = {
 			isa = PBXGroup;
 			children = (
-				F52506C82ACDABE10008FFC3 /* AppDelegate.swift */,
-				F52507112ACE568F0008FFC3 /* SelectVehicleTypeViewController.swift */,
-				F52507122ACE568F0008FFC3 /* SelectVehicleTypeViewController.xib */,
-				F52506CA2ACDABE10008FFC3 /* SceneDelegate.swift */,
-				F525073B2ACE6C840008FFC3 /* ParkingEntryDateSelectionViewController.swift */,
-				F525073C2ACE6C840008FFC3 /* ParkingEntryDateSelectionViewController.xib */,
-				F52507512ACEC2320008FFC3 /* ParkingExitDateSelectionViewController.swift */,
-				F52507522ACEC2320008FFC3 /* ParkingExitDateSelectionViewController.xib */,
-				F525073F2ACE77400008FFC3 /* TicketDetailsViewController.swift */,
-				F52507402ACE77400008FFC3 /* TicketDetailsViewController.xib */,
-				F52507472ACE9D920008FFC3 /* ReceiptDetailsViewController.swift */,
-				F52507482ACE9D920008FFC3 /* ReceiptDetailsViewController.xib */,
+				F52507552ACEC7C50008FFC3 /* Application */,
+				F52507562ACEC7F00008FFC3 /* Models */,
+				F52507572ACEC8270008FFC3 /* Extensions */,
+				F52507582ACEC83D0008FFC3 /* CustomViews */,
+				F52507592ACEC8580008FFC3 /* ViewControllers */,
 				F52506CE2ACDABE10008FFC3 /* Main.storyboard */,
 				F52506D42ACDABE20008FFC3 /* Assets.xcassets */,
 				F52506D62ACDABE20008FFC3 /* LaunchScreen.storyboard */,
 				F52506D92ACDABE20008FFC3 /* Info.plist */,
 				F52506D12ACDABE10008FFC3 /* MyParkingLotApp.xcdatamodeld */,
-				F52507012ACDC2C00008FFC3 /* Ticket.swift */,
-				F525074F2ACEA80D0008FFC3 /* ParkingFee.swift */,
-				F52506FF2ACDBB680008FFC3 /* ParkingLot.swift */,
-				F52506FD2ACDB5AC0008FFC3 /* Vehicle.swift */,
-				F52506FB2ACDAC7F0008FFC3 /* ParkingSpot.swift */,
-				F52507032ACDC3920008FFC3 /* ParkingReceipt.swift */,
-				F52507052ACE32200008FFC3 /* CreatingParkingLotViewController.swift */,
-				F52507072ACE3F190008FFC3 /* UIViewController+Alert.swift */,
-				F52507092ACE46160008FFC3 /* ParkingLotViewController.swift */,
-				F525070A2ACE46160008FFC3 /* ParkingLotViewController.xib */,
-				F525070D2ACE52BD0008FFC3 /* CustomButton.swift */,
-				F525070F2ACE555C0008FFC3 /* ParkingAction.swift */,
-				F525074B2ACEA2420008FFC3 /* ReceiptsListViewController.swift */,
-				F525074C2ACEA2420008FFC3 /* ReceiptsListViewController.xib */,
-				F52507432ACE83330008FFC3 /* TicketsListViewController.swift */,
-				F52507442ACE83330008FFC3 /* TicketsListViewController.xib */,
 			);
 			path = MyParkingLotApp;
 			sourceTree = "<group>";
@@ -203,6 +180,69 @@
 				F52506EE2ACDABE20008FFC3 /* MyParkingLotAppUITestsLaunchTests.swift */,
 			);
 			path = MyParkingLotAppUITests;
+			sourceTree = "<group>";
+		};
+		F52507552ACEC7C50008FFC3 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				F52506C82ACDABE10008FFC3 /* AppDelegate.swift */,
+				F52506CA2ACDABE10008FFC3 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		F52507562ACEC7F00008FFC3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F52507012ACDC2C00008FFC3 /* Ticket.swift */,
+				F525074F2ACEA80D0008FFC3 /* ParkingFee.swift */,
+				F52506FF2ACDBB680008FFC3 /* ParkingLot.swift */,
+				F52506FD2ACDB5AC0008FFC3 /* Vehicle.swift */,
+				F52506FB2ACDAC7F0008FFC3 /* ParkingSpot.swift */,
+				F52507032ACDC3920008FFC3 /* ParkingReceipt.swift */,
+				F525070F2ACE555C0008FFC3 /* ParkingAction.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F52507572ACEC8270008FFC3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F52507072ACE3F190008FFC3 /* UIViewController+Alert.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F52507582ACEC83D0008FFC3 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				F525070D2ACE52BD0008FFC3 /* CustomButton.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		F52507592ACEC8580008FFC3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F52507112ACE568F0008FFC3 /* SelectVehicleTypeViewController.swift */,
+				F52507122ACE568F0008FFC3 /* SelectVehicleTypeViewController.xib */,
+				F525073B2ACE6C840008FFC3 /* ParkingEntryDateSelectionViewController.swift */,
+				F525073C2ACE6C840008FFC3 /* ParkingEntryDateSelectionViewController.xib */,
+				F52507512ACEC2320008FFC3 /* ParkingExitDateSelectionViewController.swift */,
+				F52507522ACEC2320008FFC3 /* ParkingExitDateSelectionViewController.xib */,
+				F525073F2ACE77400008FFC3 /* TicketDetailsViewController.swift */,
+				F52507402ACE77400008FFC3 /* TicketDetailsViewController.xib */,
+				F52507472ACE9D920008FFC3 /* ReceiptDetailsViewController.swift */,
+				F52507482ACE9D920008FFC3 /* ReceiptDetailsViewController.xib */,
+				F52507092ACE46160008FFC3 /* ParkingLotViewController.swift */,
+				F525070A2ACE46160008FFC3 /* ParkingLotViewController.xib */,
+				F525074B2ACEA2420008FFC3 /* ReceiptsListViewController.swift */,
+				F525074C2ACEA2420008FFC3 /* ReceiptsListViewController.xib */,
+				F52507432ACE83330008FFC3 /* TicketsListViewController.swift */,
+				F52507442ACE83330008FFC3 /* TicketsListViewController.xib */,
+				F52507052ACE32200008FFC3 /* CreatingParkingLotViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
